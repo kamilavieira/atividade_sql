@@ -69,3 +69,4 @@ WHERE continent IN (
     HAVING MAX(population) <= 25000000
 );
 --10 questão
+--Esse eu não consegui professor, peço perdão por isso.
