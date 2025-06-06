@@ -25,8 +25,15 @@ SELECT name, population FROM world
 WHERE population IN (SELECT population FROM world 
 WHERE population > 67026292 AND population < 84432670);
 --5 questão
+SELECT name,
+       CONCAT(ROUND(100*population/(SELECT population
+                                    FROM world
+                                    WHERE name = 'Germany')),'%') AS percentage
 
+FROM world
+WHERE continent = 'Europe';
 --6 questão
+
 --7 questão
 --8 questão
 --9 questão
